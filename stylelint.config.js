@@ -6,6 +6,8 @@ module.exports = {
     ],
 
     rules: {
-        indentation: 4
+        indentation: 4,
+
+        'max-nesting-depth': 4
     }
 };
