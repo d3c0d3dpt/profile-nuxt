@@ -1,10 +1,10 @@
 <template lang="pug">
-    article.card.p-4r.space-y-6r
+    article.card.padding-box.space-y-standard
         h2.flex.items-center
-            check-circle-icon.mr-4r(:size="48")
+            check-circle-icon.mr-4(:size="48")
             | {{ $t('skills.title') }}
 
-        section.space-y-4r
+        section.space-y-standard
             div.space-y-1
                 h3 {{ $t('skills.main') }}
 

@@ -1,12 +1,12 @@
 <template lang="pug">
     article.card
-        .p-4r.space-y-6r
+        .padding-box.space-y-standard
             h2.flex.items-center
-                list-icon.mr-4r(:size="48")
+                list-icon.mr-4(:size="48")
                 | {{ $t('projects.title') }}
 
-            section.space-y-4r
-                .space-y-4r(v-for="p in $t('projects.list')" :key="p.title")
+            section.space-y-4
+                .space-y-4(v-for="p in $t('projects.list')" :key="p.title")
                     h3 {{ p.title }}
 
                     project(:project="{ ...p, title: undefined }")

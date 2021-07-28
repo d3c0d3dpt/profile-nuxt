@@ -24,8 +24,8 @@ export default {
             ]);
         }
 
-        return createElement('div', { class: 'border-t pt-4r flex items-center', ...context.data }, [
-            createElement('div', { class: 'text-indigo-800 mr-4r' }, context.children),
+        return createElement('div', { class: 'border-t pt-4 flex items-center', ...context.data }, [
+            createElement('div', { class: 'text-indigo-800 mr-4' }, context.children),
 
             getSidebarEntryComponent(context.props.title, context.props.description, context.props.href)
         ]);

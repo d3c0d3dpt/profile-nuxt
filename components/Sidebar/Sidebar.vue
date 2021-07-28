@@ -1,8 +1,9 @@
 <template lang="pug">
     aside.card
-        img.rounded-t(src="/photo.jpg")
+        div.rounded-t.overflow-hidden
+            img.mx-auto(src="/photo.jpg")
 
-        .p-4r.space-y-4r
+        .margin-box-container
             .text-center
                 h1 Álvaro Ferreira
                 h3 Web Engineer

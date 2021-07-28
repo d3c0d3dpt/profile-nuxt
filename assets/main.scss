@@ -24,7 +24,7 @@ span {
 }
 
 .button {
-    @apply text-xl text-indigo-800 py-2 flex justify-center items-center border-t md:py-4;
+    @apply text-xl text-indigo-800 py-4 flex justify-center items-center border-t;
     @apply bg-white transition-all;
 
     &:hover {
@@ -40,38 +40,24 @@ span {
     @apply bg-white shadow rounded;
 }
 
-//////////////////////////
-//  Responsive Classes  //
-//////////////////////////
-
-.gap-4r {
-    @apply gap-2 md:gap-4;
+.container {
+    @apply mx-auto xl:max-w-screen-xl;
 }
 
-.mr-4r {
-    @apply mr-2 md:mr-4;
+.grid-standard-gap {
+    @apply gap-4 md:gap-6;
 }
 
-.p-4r {
-    @apply p-2 md:p-4;
+.margin-box-container > *,
+.margin-box {
+    @apply m-4 md:mx-6;
 }
 
-.pt-4r {
-    @apply pt-2 md:pt-4;
+.padding-box-container > *,
+.padding-box {
+    @apply p-4 md:px-6;
 }
 
-.px-4r {
-    @apply px-2 md:px-4;
-}
-
-.space-y-2r {
-    @apply space-y-1 md:space-y-2;
-}
-
-.space-y-4r {
-    @apply space-y-2 md:space-y-4;
-}
-
-.space-y-6r {
-    @apply space-y-3 md:space-y-6;
+.space-y-standard {
+    @apply space-y-4 md:space-y-6;
 }

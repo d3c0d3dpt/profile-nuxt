@@ -1,11 +1,11 @@
 <template lang="pug">
-    article.card.p-4r.space-y-6r
+    article.card.padding-box.space-y-standard
         h2.flex.items-center
-            book-icon.mr-4r(:size="48")
+            book-icon.mr-4(:size="48")
             | {{ $t('academic.title') }}
 
-        section.space-y-4r
-            .space-y-4r(v-for="degree in $t('academic.path')" :key="degree.title")
+        section.space-y-standard
+            .space-y-4(v-for="degree in $t('academic.path')" :key="degree.title")
                 section
                     h3 {{ degree.title }}
 

@@ -1,5 +1,5 @@
 <template lang="pug">
-    section.space-y-4r
+    section.space-y-4
         div(v-if="project.title || project.href")
             h4(v-if="project.title") {{ project.title }}
             anchor(v-if="project.href" :href="project.href") {{ project.hrefLabel || project.href }}
