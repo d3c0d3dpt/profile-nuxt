@@ -24,11 +24,15 @@ span {
 }
 
 .button {
-    @apply text-xl text-indigo-800 py-2 flex justify-center items-center border-t rounded-b;
+    @apply text-xl text-indigo-800 py-2 flex justify-center items-center border-t md:py-4;
     @apply bg-white transition-all;
 
     &:hover {
         @apply text-white bg-indigo-800;
+    }
+
+    + .button {
+        @apply border-l;
     }
 }
 

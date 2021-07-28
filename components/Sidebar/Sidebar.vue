@@ -12,22 +12,21 @@
             sidebar-entry(:title="$t('sidebar.age', [age])" :description="$t('sidebar.birthday')")
                 user-icon(:size="32")
 
-            sidebar-entry(
-                :title="$t('sidebar.location')"
-                :description="$t('sidebar.locationDescription')"
-
-                href="https://www.openstreetmap.org/relation/3372453"
-            )
+            sidebar-entry(:title="$t('sidebar.location')" :description="$t('sidebar.locationDescription')")
                 map-pin-icon(:size="32")
-
-            sidebar-entry(title="me@aferreira.xyz" :description="$t('sidebar.contact')" href="mailto:me@aferreira.xyz")
-                mail-icon(:size="32")
-
-            sidebar-entry(title="LinkedIn" description="@alvarojgf" href="https://www.linkedin.com/in/alvarojgf")
-                linked-in-icon(:size="32")
 
             sidebar-entry(:title="$t('sidebar.locales.0')" :description="$t('sidebar.locales.1')")
                 flag-icon(:size="32")
+
+        .grid.grid-cols-3
+            a.button.rounded-bl(href="mailto:me@aferreira.xyz" target="_blank")
+                mail-icon(:size="32")
+
+            a.button(href="https://github.com/d3c0d3dpt" target="_blank")
+                github-icon(:size="32")
+
+            a.button.rounded-br(href="https://www.linkedin.com/in/alvarojgf" target="_blank")
+                linked-in-icon(:size="32")
 </template>
 
 <script lang="ts">

@@ -12,7 +12,7 @@
                     project(:project="{ ...p, title: undefined }")
 
         .buttons
-            a.button(href="https://github.com/d3c0d3dpt" target="_blank" )
+            a.button.rounded-b(href="https://github.com/d3c0d3dpt" target="_blank" )
                 github-icon.mr-1
 
                 | GitHub

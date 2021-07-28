@@ -1,7 +1,8 @@
 <template lang="pug">
     .container.mx-auto
         .grid
-            sidebar
+            div
+                sidebar
 
             content.space-y-6r
                 skills
