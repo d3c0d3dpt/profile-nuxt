@@ -21,15 +21,19 @@
                 flag-icon(:size="32")
 
         .grid.grid-cols-3
-            a.button.flex.flex-col.rounded-bl(href="mailto:me@aferreira.xyz" target="_blank")
+            a.button.flex.flex-col.rounded-bl(href="mailto:me@aferreira.xyz" target="_blank" rel="noreferrer")
                 mail-icon(:size="32")
                 span.text-current E-Mail
 
-            a.button.flex.flex-col(href="https://github.com/d3c0d3dpt" target="_blank")
+            a.button.flex.flex-col(href="https://github.com/d3c0d3dpt" target="_blank" rel="noreferrer")
                 github-icon(:size="32")
                 span.text-current GitHub
 
-            a.button.flex.flex-col.rounded-br(href="https://www.linkedin.com/in/alvarojgf" target="_blank")
+            a.button.flex.flex-col.rounded-br(
+                href="https://www.linkedin.com/in/alvarojgf"
+                target="_blank"
+                rel="noreferrer"
+            )
                 linked-in-icon(:size="32")
                 span.text-current LinkedIn
 </template>
