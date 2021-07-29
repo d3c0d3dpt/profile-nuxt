@@ -32,6 +32,8 @@
 
             "@nuxt/types",
 
+            "@nuxtjs/firebase",
+
             "nuxt-i18n"
         ]
     },

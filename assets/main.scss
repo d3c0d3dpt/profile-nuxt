@@ -27,7 +27,11 @@ span {
     @apply text-xl text-indigo-800 py-4 flex justify-center items-center border-t;
     @apply bg-white transition-all;
 
-    &:hover {
+    &:disabled {
+        @apply text-gray-500;
+    }
+
+    &:hover:not(:disabled) {
         @apply text-white bg-indigo-800;
     }
 
@@ -46,6 +50,28 @@ span {
 
 .grid-standard-gap {
     @apply gap-4 md:gap-6;
+}
+
+.input-container {
+    @apply bg-white relative px-4 py-2 border rounded transition-all;
+
+    > input,
+    > textarea {
+        @apply text-gray-800 outline-none w-full p-0 mt-4;
+    }
+
+    > span {
+        @apply text-base text-indigo-800 flex items-center pointer-events-none transition-all;
+        @apply absolute top-0 h-14 h-20 max-h-14 z-10;
+    }
+
+    &.active > span {
+        @apply text-sm max-h-8;
+    }
+
+    &.focus {
+        @apply border-gray-800;
+    }
 }
 
 .margin-box-container > *,

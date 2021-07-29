@@ -10,4 +10,5 @@
                 projects
                 training
                 academic
+                contact
 </template>

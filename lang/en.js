@@ -189,5 +189,18 @@ export default {
                 description: 'Graduated in 2017, with an average classification of 13, where skills were acquired in the planning, architecturing and developing of software projects, as well as network and server management.'
             }
         ]
+    },
+
+    contact: {
+        title: 'Contact Me',
+
+        name: 'Name',
+        email: 'E-Mail Address',
+        message: 'Message',
+
+        send: 'Send',
+        sendPending: 'Sending...',
+        sendFailed: 'Failed. Retry',
+        sendSuccessful: 'Sent'
     }
 };

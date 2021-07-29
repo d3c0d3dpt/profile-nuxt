@@ -59,11 +59,34 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
+        '@nuxtjs/firebase',
+
         'nuxt-i18n'
     ],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {
+    },
+
+    firebase: {
+        config: {
+            apiKey: '',
+            authDomain: '',
+            databaseURL: '',
+            projectId: '',
+            storageBucket: '',
+            messagingSenderId: '',
+            appId: '',
+            measurementId: ''
+        },
+
+        onFirebaseHosting: true,
+
+        services: {
+            functions: {
+                location: 'europe-west1'
+            }
+        }
     },
 
     i18n: {

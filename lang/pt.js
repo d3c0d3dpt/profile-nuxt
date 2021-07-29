@@ -189,5 +189,18 @@ export default {
                 description: 'Licenciatura terminada em 2017 com média de 13, onde foram adquiridas competências no planeamento, arquitectura e desenvolvimento de projectos informáticos, assim como gestão de redes e servidores.'
             }
         ]
+    },
+
+    contact: {
+        title: 'Entrar em Contacto',
+
+        name: 'Nome',
+        email: 'Endereço de E-Mail',
+        message: 'Mensagem',
+
+        send: 'Enviar',
+        sendPending: 'A Enviar...',
+        sendFailed: 'Falhou. Re-enviar',
+        sendSuccessful: 'Enviado'
     }
 };
