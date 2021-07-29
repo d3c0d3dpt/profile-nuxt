@@ -5,7 +5,7 @@
             | {{ $t('skills.title') }}
 
         section.space-y-standard
-            div.space-y-1
+            .space-y-1
                 h3 {{ $t('skills.main') }}
 
                 .grid.gap-y-1.text-center(class="grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6")
@@ -14,7 +14,7 @@
 
                         p {{ skill.proficiency }}
 
-            div.space-y-1
+            .space-y-1
                 h3 {{ $t('skills.interests') }}
 
                 .grid.gap-y-2.text-center(class="grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6")

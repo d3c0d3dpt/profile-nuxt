@@ -1,7 +1,8 @@
 <template lang="pug">
     aside.card
-        div.rounded-t.overflow-hidden
-            img.mx-auto(src="/photo.jpg")
+        .rounded-t.overflow-hidden
+            .mx-auto.max-w-md(class="lg:max-w-none")
+                img(src="/photo.jpg" alt="Profile Picture")
 
         .margin-box-container
             .text-center
