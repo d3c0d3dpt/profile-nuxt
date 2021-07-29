@@ -1,9 +1,9 @@
 <template lang="pug">
     article.card
         .padding-box.space-y-standard
-            h2.flex.items-center
-                list-icon.mr-4(:size="48")
-                | {{ $t('projects.title') }}
+            h2.flex.items-center.space-x-4
+                list-icon(:size="48")
+                div {{ $t('projects.title') }}
 
             section.space-y-4
                 .space-y-4(v-for="p in $t('projects.list')" :key="p.title")

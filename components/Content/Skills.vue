@@ -1,8 +1,8 @@
 <template lang="pug">
     article.card.padding-box.space-y-standard
-        h2.flex.items-center
-            check-circle-icon.mr-4(:size="48")
-            | {{ $t('skills.title') }}
+        h2.flex.items-center.space-x-4
+            check-circle-icon(:size="48")
+            div {{ $t('skills.title') }}
 
         section.space-y-standard
             .space-y-1

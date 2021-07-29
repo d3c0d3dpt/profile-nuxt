@@ -1,9 +1,9 @@
 <template lang="pug">
     form.card(@submit.prevent="submit")
         .padding-box.space-y-standard
-            h2.flex.items-center
-                phone-icon.mr-4(:size="48")
-                | {{ $t('contact.title') }}
+            h2.flex.items-center.space-x-4
+                phone-icon(:size="48")
+                div {{ $t('contact.title') }}
 
             .space-y-4
                 .grid.gap-4(class="grid-cols-1 lg:grid-cols-2")

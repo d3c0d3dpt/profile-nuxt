@@ -1,8 +1,8 @@
 <template lang="pug">
     article.card.padding-box.space-y-standard
-        h2.flex.items-center
-            briefcase-icon.mr-4(:size="48")
-            | {{ $t('career.title') }}
+        h2.flex.items-center.space-x-4
+            briefcase-icon(:size="48")
+            div {{ $t('career.title') }}
 
         section.space-y-4
             .space-y-4(v-for="job in $t('career.path')" :key="job.company")
