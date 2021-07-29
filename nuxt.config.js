@@ -1,3 +1,5 @@
+/* eslint-disable max-len */
+
 export default {
     ssr: false,
 
@@ -6,17 +8,29 @@ export default {
 
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
-        title: 'profile',
-
-        htmlAttrs: {
-            lang: 'en'
-        },
+        title: 'Álvaro Ferreira - Profile, Projects, Career, Contact Info',
 
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-            { hid: 'description', name: 'description', content: '' },
-            { name: 'format-detection', content: 'telephone=no' }
+            { name: 'format-detection', content: 'telephone=no' },
+
+            { name: 'title', content: 'Álvaro Ferreira - Profile, Projects, Career, Contact Info' },
+            { name: 'description', content: 'Web Engineer as a Professional, Performance Improver as an Enthusiast. Message me for more details or project requests' },
+
+            // Open Graph / Facebook
+            { name: 'og:type', content: 'website' },
+            { name: 'og:url', content: 'https://metatags.io/' },
+            { name: 'og:title', content: 'Álvaro Ferreira - Profile, Projects, Career, Contact Info' },
+            { name: 'og:description', content: 'Web Engineer as a Professional, Performance Improver as an Enthusiast. Message me for more details or project requests' },
+            { name: 'og:image', content: 'https://aferreira-xyz.web.app/seo.png' },
+
+            // Twitter
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:url', content: 'https://metatags.io/' },
+            { name: 'twitter:title', content: 'Álvaro Ferreira - Profile, Projects, Career, Contact Info' },
+            { name: 'twitter:description', content: 'Web Engineer as a Professional, Performance Improver as an Enthusiast. Message me for more details or project requests' },
+            { name: 'twitter:image', content: 'https://aferreira-xyz.web.app/seo.png' }
         ],
 
         link: [
@@ -52,9 +66,6 @@ export default {
 
         // https://go.nuxtjs.dev/tailwindcss
         '@nuxtjs/tailwindcss'
-
-        // https://color-mode.nuxtjs.org/
-        // '@nuxtjs/color-mode'
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -90,14 +101,18 @@ export default {
     },
 
     i18n: {
+        baseUrl: 'https://aferreira.xyz',
+
         locales: [
-            { code: 'en', file: 'en.js' },
-            { code: 'pt', file: 'pt.js' }
+            { code: 'en', iso: 'en-GB', file: 'en.js' },
+            { code: 'pt', iso: 'pt-PT', file: 'pt.js' }
         ],
 
         defaultLocale: 'en',
 
         lazy: true,
-        langDir: 'lang/'
+        langDir: 'lang/',
+
+        seo: true
     }
 };
