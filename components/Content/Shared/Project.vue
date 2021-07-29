@@ -33,13 +33,13 @@ export default class Project extends Vue {
         platforms?: string[];
     }
 
-    get hasPlatforms (): bool {
+    get hasPlatforms (): boolean {
         const platforms = this.project.platforms;
 
         return platforms !== undefined && Array.isArray(platforms) && platforms.length > 0;
     }
 
-    get hasTechnologies (): bool {
+    get hasTechnologies (): boolean {
         const technologies = this.project.technologies;
 
         return technologies !== undefined && Array.isArray(technologies) && technologies.length > 0;
