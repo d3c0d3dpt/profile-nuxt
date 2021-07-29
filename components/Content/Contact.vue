@@ -20,20 +20,17 @@
                     )
 
         .buttons
-            button.button.rounded-b.w-full(v-if="!sent" type="submit")
-                send-icon.mr-1
+            button.button.rounded-b.w-full.space-x-2(v-if="!sent" type="submit")
+                send-icon
+                div {{ $t('contact.send') }}
 
-                | {{ $t('contact.send') }}
+            button.button.rounded-b.w-full.cursor-default.space-x-2(v-else-if="sentFailed" type="submit")
+                x-icon
+                div {{ $t('contact.sendFailed') }}
 
-            button.button.rounded-b.w-full.cursor-default(v-else-if="sentFailed" type="submit")
-                x-icon.mr-1
-
-                | {{ $t('contact.sendFailed') }}
-
-            button.button.rounded-b.w-full.cursor-default(v-else-if="sentSuccessful" disabled)
-                check-icon.mr-1
-
-                | {{ $t('contact.sendSuccessful') }}
+            button.button.rounded-b.w-full.cursor-default.space-x-2(v-else-if="sentSuccessful" disabled)
+                check-icon
+                div {{ $t('contact.sendSuccessful') }}
 
             button.button.rounded-b.w-full.cursor-wait(v-else disabled)  {{ $t('contact.sendPending') }}
 </template>
