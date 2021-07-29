@@ -1,8 +1,6 @@
 /* eslint-disable max-len */
 
 export default {
-    ssr: false,
-
     // Target: https://go.nuxtjs.dev/config-target
     target: 'static',
 
