@@ -7,7 +7,7 @@ on:
 
 jobs:
   build_and_preview:
-    name: Build and Deploy Preview
+    name: Build and Deploy
     runs-on: ubuntu-latest
 
     steps:
