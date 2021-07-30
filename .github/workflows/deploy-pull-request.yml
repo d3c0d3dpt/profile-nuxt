@@ -6,6 +6,8 @@ jobs:
   build_and_preview:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
 
+    name: Build and Deploy Preview
+
     runs-on: ubuntu-latest
 
     steps:
@@ -16,6 +18,15 @@ jobs:
         with:
           node-version: 14.x
           cache: 'npm'
+
+      - name: Cache Node.js modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+            ${{ runner.OS }}-
 
       - run: npm i
       - run: npm run generate
