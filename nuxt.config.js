@@ -47,6 +47,7 @@ export default {
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
+        '@/plugins/firebaseInit.client.js'
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components - Disabled to reduce the number of chunks
@@ -87,9 +88,15 @@ export default {
             measurementId: ''
         },
 
+        lazy: true,
+
         onFirebaseHosting: true,
 
         services: {
+            analytics: {
+                collectionEnabled: true
+            },
+
             functions: {
                 location: 'europe-west1'
             }

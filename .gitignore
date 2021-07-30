@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Firebase configuration file
+static/__/firebase/init.json

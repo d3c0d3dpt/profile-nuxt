@@ -57,6 +57,9 @@ export default class Contact extends Vue {
         this.sent = true;
 
         try {
+            await this.$fire.functionsReady();
+
+            this.$fire.analytics.logEvent('contact request');
             const result = await this.$fire.functions.httpsCallable('sendMail')({
                 name: this.name,
                 email: this.email,
@@ -64,6 +67,7 @@ export default class Contact extends Vue {
             });
 
             if (result.data.success) {
+                this.$fire.analytics.logEvent('contact request succeeded');
                 this.sentSuccessful = true;
                 return;
             }
@@ -71,6 +75,7 @@ export default class Contact extends Vue {
             console.error(e);
         }
 
+        this.$fire.analytics.logEvent('contact request failed');
         this.sentFailed = true;
     }
 }
