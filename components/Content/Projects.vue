@@ -2,7 +2,7 @@
     article.card
         .padding-box.space-y-standard
             h2.flex.items-center.space-x-4
-                list-icon(:size="48")
+                list-icon(size="48")
                 div {{ $t('projects.title') }}
 
             section.space-y-4

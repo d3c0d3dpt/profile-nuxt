@@ -1,7 +1,7 @@
 <template lang="pug">
     article.card.padding-box.space-y-standard
         h2.flex.items-center.space-x-4
-            book-icon(:size="48")
+            book-icon(size="48")
             div {{ $t('academic.title') }}
 
         section.space-y-standard

@@ -13,21 +13,21 @@
             p {{ $t('sidebar.profile') }}
 
             sidebar-entry(:title="$t('sidebar.age', [age])" :description="$t('sidebar.birthday')")
-                user-icon(:size="32")
+                user-icon(size="32")
 
             sidebar-entry(:title="$t('sidebar.location')" :description="$t('sidebar.locationDescription')")
-                map-pin-icon(:size="32")
+                map-pin-icon(size="32")
 
             sidebar-entry(:title="$t('sidebar.locales.0')" :description="$t('sidebar.locales.1')")
-                flag-icon(:size="32")
+                flag-icon(size="32")
 
         .grid.grid-cols-3
             a.button.flex.flex-col.rounded-bl(href="mailto:me@aferreira.xyz" target="_blank" rel="noreferrer")
-                mail-icon(:size="32")
+                mail-icon(size="32")
                 span.text-current E-Mail
 
             a.button.flex.flex-col(href="https://github.com/d3c0d3dpt" target="_blank" rel="noreferrer")
-                github-icon(:size="32")
+                github-icon(size="32")
                 span.text-current GitHub
 
             a.button.flex.flex-col.rounded-br(
@@ -35,7 +35,7 @@
                 target="_blank"
                 rel="noreferrer"
             )
-                linked-in-icon(:size="32")
+                linkedin-icon(size="32")
                 span.text-current LinkedIn
 </template>
 

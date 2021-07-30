@@ -49,10 +49,8 @@ export default {
     plugins: [
     ],
 
-    // Auto import components: https://go.nuxtjs.dev/config-components
-    components: [
-        { path: '~/components', pathPrefix: false }
-    ],
+    // Auto import components: https://go.nuxtjs.dev/config-components - Disabled to reduce the number of chunks
+    components: false,
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
     buildModules: [

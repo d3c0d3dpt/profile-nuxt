@@ -2,7 +2,7 @@
     form.card(@submit.prevent="submit")
         .padding-box.space-y-standard
             h2.flex.items-center.space-x-4
-                phone-icon(:size="48")
+                phone-icon(size="48")
                 div {{ $t('contact.title') }}
 
             .space-y-4

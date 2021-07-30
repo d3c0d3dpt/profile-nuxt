@@ -1,7 +1,7 @@
 <template lang="pug">
     article.card.padding-box.space-y-standard
         h2.flex.items-center.space-x-4
-            award-icon(:size="48")
+            award-icon(size="48")
             div {{ $t('training.title') }}
 
         section.grid.gap-4(class="grid-cols-1 sm:grid-cols-2 xl:grid-cols-3")

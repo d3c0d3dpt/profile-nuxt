@@ -1,7 +1,7 @@
 <template lang="pug">
     article.card.padding-box.space-y-standard
         h2.flex.items-center.space-x-4
-            check-circle-icon(:size="48")
+            check-circle-icon(size="48")
             div {{ $t('skills.title') }}
 
         section.space-y-standard
