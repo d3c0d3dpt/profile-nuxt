@@ -13,21 +13,21 @@ export default {
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { name: 'format-detection', content: 'telephone=no' },
 
-            { name: 'title', content: 'Álvaro Ferreira - Profile, Projects, Career, Contact Info' },
-            { name: 'description', content: 'Web Engineer as a Professional, Performance Improver as an Enthusiast. Message me for more details or project requests' },
+            { name: 'title', content: 'Álvaro Ferreira' },
+            { name: 'description', content: '' },
 
             // Open Graph / Facebook
             { name: 'og:type', content: 'website' },
-            { name: 'og:url', content: 'https://metatags.io/' },
-            { name: 'og:title', content: 'Álvaro Ferreira - Profile, Projects, Career, Contact Info' },
-            { name: 'og:description', content: 'Web Engineer as a Professional, Performance Improver as an Enthusiast. Message me for more details or project requests' },
+            { name: 'og:url', content: 'https://aferreira.xyz/' },
+            { name: 'og:title', content: 'Álvaro Ferreira' },
+            { name: 'og:description', content: '' },
             { name: 'og:image', content: 'https://aferreira-xyz.web.app/seo.png' },
 
             // Twitter
             { name: 'twitter:card', content: 'summary_large_image' },
-            { name: 'twitter:url', content: 'https://metatags.io/' },
-            { name: 'twitter:title', content: 'Álvaro Ferreira - Profile, Projects, Career, Contact Info' },
-            { name: 'twitter:description', content: 'Web Engineer as a Professional, Performance Improver as an Enthusiast. Message me for more details or project requests' },
+            { name: 'twitter:url', content: 'https://aferreira.xyz/' },
+            { name: 'twitter:title', content: 'Álvaro Ferreira' },
+            { name: 'twitter:description', content: '' },
             { name: 'twitter:image', content: 'https://aferreira-xyz.web.app/seo.png' }
         ],
 

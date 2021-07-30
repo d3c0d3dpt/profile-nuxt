@@ -1,6 +1,11 @@
 /* eslint-disable max-len */
 
 export default {
+    meta: {
+        title: 'Álvaro Ferreira - Perfil, Projectos, Carreira, Contactos',
+        description: 'Web Engineer como Profissional, Melhorador de Desempenho como Entusiasta. Envie-me uma mensagem para mais detalhes ou solicitação de projectos'
+    },
+
     sidebar: {
         profile: [
             'Com uma Licenciatura em Engenharia Informática e 7 anos de experiência profissional em desenvolvimento web, eu tenho um conhecimento significativo sobre múltiplas tecnologias e diversos tópicos.',

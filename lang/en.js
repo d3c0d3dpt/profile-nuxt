@@ -1,6 +1,11 @@
 /* eslint-disable max-len */
 
 export default {
+    meta: {
+        title: 'Álvaro Ferreira - Profile, Projects, Career, Contact Info',
+        description: 'Web Engineer as a Professional, Performance Improver as an Enthusiast. Message me for more details or project requests'
+    },
+
     sidebar: {
         profile: [
             'With a Bachelor\'s in Computer Engineering and an experience of 7 years in web development, I have significant command on multiple technologies and diversified topics.',

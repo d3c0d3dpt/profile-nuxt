@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'nuxt-property-decorator';
 
 import LocaleBar from '~/components/LocaleBar.vue';
 
@@ -32,5 +32,26 @@ import Sidebar from '~/components/Sidebar/Sidebar.vue';
 
 @Component({ components: { Academic, Career, Contact, LocaleBar, Projects, Sidebar, Skills, Training } })
 export default class IndexPage extends Vue {
+    head () {
+        const title = this.$t('meta.title');
+        const description = this.$t('meta.description');
+
+        return {
+            title,
+
+            meta: [
+                { name: 'title', content: title },
+                { name: 'description', content: description },
+
+                // Open Graph / Facebook
+                { name: 'og:title', content: title },
+                { name: 'og:description', content: description },
+
+                // Twitter
+                { name: 'twitter:title', content: title },
+                { name: 'twitter:description', content: description }
+            ]
+        };
+    }
 }
 </script>
