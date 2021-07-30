@@ -8,7 +8,7 @@
         .margin-box-container
             .text-center
                 h1 Álvaro Ferreira
-                h3 Web Engineer
+                h2 Web Engineer
 
             p {{ $t('sidebar.profile') }}
 

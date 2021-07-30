@@ -12,7 +12,7 @@
                     project(:project="{ ...p, title: undefined }")
 
         .buttons
-            a.button.rounded-b.space-x-2(href="https://github.com/d3c0d3dpt" target="_blank" )
+            a.button.rounded-b.space-x-2(href="https://github.com/d3c0d3dpt" target="_blank" rel="noreferrer")
                 github-icon.mr-1
                 div GitHub
 </template>
