@@ -7,11 +7,11 @@ jobs:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
 
     name: Build and Deploy Preview
-
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
       - name: Set up Node.js 14
         uses: actions/setup-node@v2
@@ -19,7 +19,7 @@ jobs:
           node-version: 14.x
           cache: 'npm'
 
-      - name: Cache Node.js modules
+      - name: Cache dependencies
         uses: actions/cache@v2
         with:
           path: ~/.npm
@@ -28,5 +28,8 @@ jobs:
             ${{ runner.OS }}-node-
             ${{ runner.OS }}-
 
-      - run: npm i
-      - run: npm run generate
+      - name: Install dependencies
+        run: npm i
+
+      - name: Generate Nuxt.js files
+        run: npm run generate
