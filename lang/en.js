@@ -3,7 +3,7 @@
 export default {
     sidebar: {
         profile: [
-            'With a Bachelor\'s in Computer Engineering along with an experience of 7 years in web development, I have significant command on multiple technologies and diversified topics.',
+            'With a Bachelor\'s in Computer Engineering and an experience of 7 years in web development, I have significant command on multiple technologies and diversified topics.',
             'Self-learner, team-player, attentive to details and an enthusiast for performance improvement topics.'
         ].join('\n\n'),
 
@@ -161,7 +161,7 @@ export default {
     },
 
     training: {
-        title: 'Attended Conferences and Technical Training',
+        title: 'Participation in Conferences and Technical Training',
 
         list: [
             { type: 'conference', title: 'NDC Porto', date: 'April 2020' },

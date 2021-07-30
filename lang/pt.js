@@ -161,7 +161,7 @@ export default {
     },
 
     training: {
-        title: 'Conferências Participadas e Formações Técnicas',
+        title: 'Participação em Conferências e Formações Técnicas',
 
         list: [
             { type: 'conferência', title: 'NDC Porto', date: 'Abril 2020' },

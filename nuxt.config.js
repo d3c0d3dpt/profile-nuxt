@@ -102,8 +102,8 @@ export default {
         baseUrl: 'https://aferreira.xyz',
 
         locales: [
-            { code: 'en', iso: 'en-GB', file: 'en.js' },
-            { code: 'pt', iso: 'pt-PT', file: 'pt.js' }
+            { code: 'en', iso: 'en-GB', file: 'en.js', name: 'View in English' },
+            { code: 'pt', iso: 'pt-PT', file: 'pt.js', name: 'Ver em Português' }
         ],
 
         defaultLocale: 'en',
