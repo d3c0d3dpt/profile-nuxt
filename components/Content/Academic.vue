@@ -16,3 +16,15 @@
 
                 p {{ degree.description }}
 </template>
+
+<script lang="ts">
+import { BookIcon } from 'vue-feather-icons';
+
+import { Component, Vue } from 'vue-property-decorator';
+
+import Anchor from './Shared/Anchor';
+
+@Component({ components: { Anchor, BookIcon } })
+export default class Academic extends Vue {
+}
+</script>

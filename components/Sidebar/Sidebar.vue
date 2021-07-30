@@ -40,9 +40,15 @@
 </template>
 
 <script lang="ts">
+import { FlagIcon, GithubIcon, LinkedinIcon, MailIcon, MapPinIcon, UserIcon } from 'vue-feather-icons';
+
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component
+import SidebarEntry from './SidebarEntry';
+
+@Component({
+    components: { FlagIcon, GithubIcon, LinkedinIcon, MailIcon, MapPinIcon, SidebarEntry, UserIcon }
+})
 export default class Sidebar extends Vue {
     age = new Date(Date.now() - 731286000000).getUTCFullYear() - 1970;
 }

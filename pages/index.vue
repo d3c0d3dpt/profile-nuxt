@@ -15,3 +15,22 @@
                     academic
                     contact
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+import LocaleBar from '~/components/LocaleBar.vue';
+
+import Academic from '~/components/Content/Academic.vue';
+import Career from '~/components/Content/Career.vue';
+import Contact from '~/components/Content/Contact.vue';
+import Projects from '~/components/Content/Projects.vue';
+import Skills from '~/components/Content/Skills.vue';
+import Training from '~/components/Content/Training.vue';
+
+import Sidebar from '~/components/Sidebar/Sidebar.vue';
+
+@Component({ components: { Academic, Career, Contact, LocaleBar, Projects, Sidebar, Skills, Training } })
+export default class IndexPage extends Vue {
+}
+</script>

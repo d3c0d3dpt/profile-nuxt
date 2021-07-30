@@ -22,9 +22,11 @@
 </template>
 
 <script lang="ts">
+import { CheckCircleIcon } from 'vue-feather-icons';
+
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component
+@Component({ components: { CheckCircleIcon } })
 export default class Skills extends Vue {
     mainSkills = [
         { tech: 'JavaScript', proficiency: '▓ ▓ ▓ ▓ ▓ ▓ ▓ ▓' },

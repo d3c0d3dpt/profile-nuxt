@@ -36,9 +36,14 @@
 </template>
 
 <script lang="ts">
+import { CheckIcon, PhoneIcon, SendIcon, XIcon } from 'vue-feather-icons';
+
 import { Component, Vue } from 'vue-property-decorator';
 
-@Component
+import LabeledInput from './Shared/LabeledInput.vue';
+import LabeledTextarea from './Shared/LabeledTextarea.vue';
+
+@Component({ components: { CheckIcon, LabeledInput, LabeledTextarea, PhoneIcon, SendIcon, XIcon } })
 export default class Contact extends Vue {
     name = '';
     email = '';

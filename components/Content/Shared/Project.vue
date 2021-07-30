@@ -19,7 +19,9 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
-@Component
+import Anchor from './Anchor';
+
+@Component({ components: { Anchor } })
 export default class Project extends Vue {
     @Prop({ type: Object, required: true }) project!: {
         title?: string;

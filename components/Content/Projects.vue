@@ -16,3 +16,15 @@
                 github-icon.mr-1
                 div GitHub
 </template>
+
+<script lang="ts">
+import { GithubIcon, ListIcon } from 'vue-feather-icons';
+
+import { Component, Vue } from 'vue-property-decorator';
+
+import Project from './Shared/Project.vue';
+
+@Component({ components: { GithubIcon, ListIcon, Project } })
+export default class Projects extends Vue {
+}
+</script>

@@ -11,3 +11,13 @@
 
                 span.text-gray-500 {{ i.date }}
 </template>
+
+<script lang="ts">
+import { AwardIcon } from 'vue-feather-icons';
+
+import { Component, Vue } from 'vue-property-decorator';
+
+@Component({ components: { AwardIcon } })
+export default class Training extends Vue {
+}
+</script>
