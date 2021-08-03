@@ -69,7 +69,9 @@ export default {
     modules: [
         '@nuxtjs/firebase',
 
-        'nuxt-i18n'
+        'nuxt-i18n',
+
+        '@nuxtjs/sitemap'
     ],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -117,5 +119,9 @@ export default {
         langDir: 'lang/',
 
         seo: true
+    },
+
+    sitemap: {
+        hostname: 'https://aferreira.xyz'
     }
 };
