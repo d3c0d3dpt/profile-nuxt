@@ -40,16 +40,16 @@ export default class IndexPage extends Vue {
             title,
 
             meta: [
-                { name: 'title', content: title },
-                { name: 'description', content: description },
+                { hid: 'title', name: 'title', content: title },
+                { hid: 'description', name: 'description', content: description },
 
                 // Open Graph / Facebook
-                { name: 'og:title', content: title },
-                { name: 'og:description', content: description },
+                { hid: 'og:title', name: 'og:title', content: title },
+                { hid: 'og:description', name: 'og:description', content: description },
 
                 // Twitter
-                { name: 'twitter:title', content: title },
-                { name: 'twitter:description', content: description }
+                { hid: 'twitter:title', name: 'twitter:title', content: title },
+                { hid: 'twitter:description', name: 'twitter:description', content: description }
             ]
         };
     }

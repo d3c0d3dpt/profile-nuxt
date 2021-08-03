@@ -13,22 +13,22 @@ export default {
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { name: 'format-detection', content: 'telephone=no' },
 
-            { name: 'title', content: 'Álvaro Ferreira' },
-            { name: 'description', content: '' },
+            { hid: 'title', name: 'title', content: 'Álvaro Ferreira' },
+            { hid: 'description', name: 'description', content: '' },
 
             // Open Graph / Facebook
-            { name: 'og:type', content: 'website' },
-            { name: 'og:url', content: 'https://aferreira.xyz/' },
-            { name: 'og:title', content: 'Álvaro Ferreira' },
-            { name: 'og:description', content: '' },
-            { name: 'og:image', content: 'https://aferreira-xyz.web.app/seo.png' },
+            { hid: 'og:type', name: 'og:type', content: 'website' },
+            { hid: 'og:url', name: 'og:url', content: 'https://aferreira.xyz/' },
+            { hid: 'og:title', name: 'og:title', content: 'Álvaro Ferreira' },
+            { hid: 'og:description', name: 'og:description', content: '' },
+            { hid: 'og:image', name: 'og:image', content: 'https://aferreira-xyz.web.app/seo.png' },
 
             // Twitter
-            { name: 'twitter:card', content: 'summary_large_image' },
-            { name: 'twitter:url', content: 'https://aferreira.xyz/' },
-            { name: 'twitter:title', content: 'Álvaro Ferreira' },
-            { name: 'twitter:description', content: '' },
-            { name: 'twitter:image', content: 'https://aferreira-xyz.web.app/seo.png' }
+            { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+            { hid: 'twitter:url', name: 'twitter:url', content: 'https://aferreira.xyz/' },
+            { hid: 'twitter:title', name: 'twitter:title', content: 'Álvaro Ferreira' },
+            { hid: 'twitter:description', name: 'twitter:description', content: '' },
+            { hid: 'twitter:image', name: 'twitter:image', content: 'https://aferreira-xyz.web.app/seo.png' }
         ],
 
         link: [
