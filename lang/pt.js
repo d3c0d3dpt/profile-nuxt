@@ -166,7 +166,7 @@ export default {
     },
 
     training: {
-        title: 'Participação em Conferências e Formações Técnicas',
+        title: 'Conferências e Formações',
 
         list: [
             { type: 'conferência', title: 'NDC Porto', date: 'Abril 2020' },
@@ -191,7 +191,7 @@ export default {
 
                 date: '2011 a 2014, 2017',
 
-                description: 'Licenciatura terminada em 2017 com média de 13, onde foram adquiridas competências no planeamento, arquitectura e desenvolvimento de projectos informáticos, assim como gestão de redes e servidores.'
+                description: 'Licenciatura terminada em 2017, onde foram adquiridas competências no planeamento, arquitectura e desenvolvimento de projectos informáticos, assim como gestão de redes e servidores.'
             }
         ]
     },

@@ -166,7 +166,7 @@ export default {
     },
 
     training: {
-        title: 'Participation in Conferences and Technical Training',
+        title: 'Conferences and Training',
 
         list: [
             { type: 'conference', title: 'NDC Porto', date: 'April 2020' },
@@ -191,7 +191,7 @@ export default {
 
                 date: '2011 to 2014, 2017',
 
-                description: 'Graduated in 2017, with an average classification of 13, where skills were acquired in the planning, architecturing and developing of software projects, as well as network and server management.'
+                description: 'Graduated in 2017, where skills were acquired in the planning, architecturing and developing of software projects, as well as network and server management.'
             }
         ]
     },
