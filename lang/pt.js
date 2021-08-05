@@ -77,7 +77,9 @@ export default {
                             'PHP (Zend)',
                             'JS (Vanilla, ExtJS & Vue.js)',
                             'CSS',
-                            'Docker'
+                            'Docker',
+                            'SQL (MySQL/MariaDB)',
+                            'RabbitMQ'
                         ]
                     },
 
@@ -91,7 +93,9 @@ export default {
                         ],
 
                         technologies: [
-                            'JS (Vanilla & Node.js)'
+                            'JS (Vanilla & Node.js)',
+                            'SQL (SQLite)',
+                            'NoSQL (Redis)'
                         ]
                     },
 
@@ -114,6 +118,7 @@ export default {
                             'PHP (Laravel)',
                             'CSS (Tailwind CSS)',
                             'Docker',
+                            'SQL (MySQL/MariaDB)',
                             'NGINX'
                         ]
                     }

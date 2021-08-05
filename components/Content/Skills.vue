@@ -37,6 +37,19 @@ export default class Skills extends Vue {
         { tech: 'CSS', proficiency: '▓ ▓ ▓ ▓ ▓ ▓ ░ ░' }
     ];
 
-    keen = ['Typescript', 'Nuxt.JS', 'Node.JS', 'Pug', 'Drone CI', 'Feather Icons', 'Firebase', 'Tailwind CSS'].sort();
+    keen = [
+        'Typescript',
+        'Nuxt.JS',
+        'Node.JS',
+        'Pug',
+        'Drone CI',
+        'Feather Icons',
+        'Firebase',
+        'Tailwind CSS',
+        'MongoDB',
+        'Redis',
+        'ESLint',
+        'Stylelint'
+    ].sort();
 }
 </script>
