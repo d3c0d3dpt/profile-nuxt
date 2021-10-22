@@ -1,5 +1,6 @@
 {
     "extends": [
         "github>d3c0d3dpt/renovate-config"
+        
     ]
 }
