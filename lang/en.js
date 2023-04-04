@@ -44,6 +44,41 @@ export default {
 
         path: [
             {
+                company: 'Mindera',
+                companyHref: 'https://mindera.com/',
+
+                role: 'Software Developer',
+
+                location: 'Mindera Portugal',
+                locationHref: 'https://mindera.com/portugal/',
+
+                date: 'November 2021 - Present',
+
+                projects: [
+                    {
+                        title: 'Dunelm',
+
+                        href: 'https://www.dunelm.com/',
+                        hrefLabel: 'dunelm.com',
+
+                        description: [
+                            'Part of a team for the development and maintenance of back-office applications and tools'
+                        ].join('\n\n'),
+
+                        platforms: [
+                            'GitLab (Git)',
+                            'Jira (Project Management)'
+                        ],
+
+                        technologies: [
+                            'JS (TypeScript, Node.js & React)',
+                            'AWS',
+                            'GraphQL'
+                        ]
+                    }
+                ]
+            },
+            {
                 company: 'Jumia Group',
                 companyHref: 'https://group.jumia.com/',
 
@@ -52,7 +87,7 @@ export default {
                 location: 'Jumia Porto Tech Center',
                 locationHref: 'https://www.linkedin.com/company/porto-tech-center/',
 
-                date: 'November 2014 - Present',
+                date: 'November 2014 - November 2021',
 
                 projects: [
                     {
