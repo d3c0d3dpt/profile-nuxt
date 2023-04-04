@@ -31,9 +31,7 @@ export default {
             { hid: 'twitter:image', name: 'twitter:image', content: 'https://aferreira-xyz.web.app/seo.png' }
         ],
 
-        link: [
-            { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-        ]
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
     },
 
     generate: {
@@ -41,14 +39,10 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: [
-        '@/assets/main.scss'
-    ],
+    css: ['@/assets/main.scss'],
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: [
-        '@/plugins/firebaseInit.client.js'
-    ],
+    plugins: ['@/plugins/firebaseInit.client.js'],
 
     // Auto import components: https://go.nuxtjs.dev/config-components - Disabled to reduce the number of chunks
     components: false,
@@ -66,17 +60,10 @@ export default {
     ],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [
-        '@nuxtjs/firebase',
-
-        'nuxt-i18n',
-
-        '@nuxtjs/sitemap'
-    ],
+    modules: ['@nuxtjs/firebase', 'nuxt-i18n', '@nuxtjs/sitemap'],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {
-    },
+    build: {},
 
     firebase: {
         config: {
@@ -122,6 +109,8 @@ export default {
     },
 
     sitemap: {
-        hostname: 'https://aferreira.xyz'
+        hostname: 'https://aferreira.xyz',
+
+        exclude: ['**/secret/**']
     }
 };
