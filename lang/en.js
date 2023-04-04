@@ -71,7 +71,7 @@ export default {
                         ],
 
                         technologies: [
-                            'JS (Node.js & React)',
+                            'JS (TypeScript, Node.js & React)',
                             'AWS',
                             'GraphQL'
                         ]
